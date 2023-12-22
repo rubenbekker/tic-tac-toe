@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css"></style>
-    <title>Tic Tac Toe</title>
+    <title>Tic Tac Toe Project</title>
 </head>
 <body>
     <div id="info">
         <h2 id="info__title"> Tic Tac Toe</h2>
     </div>
-    <div class="info__player">
-        
+    <div id="info__player">
+       <img class="icon"  src="./assets/cross.png" alt="Cross"></img>
+       <img class="icon" src="./assets/circle.png" alt="Circle"></img>
+       <h3 class="info__player-1"> Player 1:</h3>
+       <h3 class="info__player-2"> Player 2:</h3>
     </div>
     <!-- #grid>enter creates a div with the id set to grid 
     #grid.$*2 creates the above but multiplied by the given numerical value.
     -->
     <div id="grid">
         <!-- #grid__square-1.grid__square -->
-        <!-- id's will be used to target in our Javascript code and class will be used for styling. -->
+        <!-- id's will be used to target sin our Javascript code and class will be used for styling. -->
         <div id="grid__square-0" class="grid__square"></div>
         <div id="grid__square-1" class="grid__square"></div>
         <div id="grid__square-2" class="grid__square"></div>
@@ -29,6 +32,10 @@
         <div id="grid__square-6" class="grid__square"></div>
         <div id="grid__square-7" class="grid__square"></div>
         <div id="grid__square-8" class="grid__square"></div>
+    </div>
+    <div id="btn">
+        <h3 class="btn__start-text">Cick the button to start</h3>
+        <button class="start__game-btn">Start Game</button>
     </div>
 </body>
 </html>
